@@ -66,7 +66,7 @@ The Extension does not knowingly collect personal information from children unde
 
 If you have any questions or concerns about this Privacy Policy or the Extension's data practices, please contact us at:
 
-[Your Email Address]
+masterofskiyt@gmail.com
 
 ## Your Rights
 
