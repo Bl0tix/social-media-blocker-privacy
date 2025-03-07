@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Blocker - Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #4285f4;
+      text-align: center;
+    }
+    .input-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    #websiteInput {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+    }
+    #timerSelect {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-left: none;
+      background-color: #f5f5f5;
+      cursor: pointer;
+    }
+    #addWebsiteBtn {
+      padding: 10px 15px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+    .website-list {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .website-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .website-item:last-child {
+      border-bottom: none;
+    }
+    .website-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .website-name {
+      font-weight: bold;
+    }
+    .timer-info {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 3px;
+    }
+    .website-controls {
+      display: flex;
+      align-items: center;
+    }
+    .edit-timer {
+      margin-right: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .delete-btn {
+      background-color: #ea4335;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .instructions {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Social Media Blocker Dashboard</h1>
+  
+  <div class="input-container">
+    <input type="text" id="websiteInput" placeholder="Enter website URL (e.g., facebook.com, twitter.com)">
+    <select id="timerSelect">
+      <option value="3">3 seconds</option>
+      <option value="5" selected>5 seconds</option>
+      <option value="10">10 seconds</option>
+      <option value="15">15 seconds</option>
+      <option value="30">30 seconds</option>
+    </select>
+    <button id="addWebsiteBtn">Add Website</button>
+  </div>
+  
+  <h2>Blocked Websites</h2>
+  <div class="website-list" id="websiteList">
+    <!-- Website items will be populated here -->
+  </div>
+  
+  <div class="instructions">
+    <h3>Instructions:</h3>
+    <p>1. Enter website domains you want to block (e.g., facebook.com, twitter.com)</p>
+    <p>2. The extension will show a 5-second delay page when you try to visit these sites</p>
+    <p>3. Use the "Pause" button in the extension popup to temporarily disable blocking</p>
+  </div>
+  
+  <script src="dashboard.js"></script>
+</body>
+</html>
