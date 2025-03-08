@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Resume Blocking - Social Media Blocker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 30px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #4285f4;
-            margin-bottom: 30px;
-        }
-
-        .container {
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        p {
-            color: #555;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .resume-btn {
-            background-color: #34a853;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            padding: 12px 30px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .resume-btn:hover {
-            background-color: #2e7d32;
-        }
-
-        .cancel-btn {
-            background-color: transparent;
-            color: #555;
-            border: none;
-            padding: 12px 20px;
-            font-size: 14px;
-            cursor: pointer;
-            margin-top: 15px;
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Blocking - Social Media Blocker</title>
+  <style>
+    html, body {
+      background-color: #2A2A28;
+      color: #E0E0E0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #2A2A28;
+    }
+    h1 {
+      color: #A0A0FF;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+    .container {
+      background-color: #333331;
+      border-radius: 4px;
+      padding: 25px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      color: #E0E0E0;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .resume-btn {
+      background-color: #A0A0FF;
+      color: #2A2A28;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      margin-bottom: 10px;
+      min-width: 150px;
+    }
+    .resume-btn:hover {
+      background-color: #8080DD;
+    }
+    .cancel-btn {
+      background: none;
+      color: #A0A0FF;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .cancel-btn:hover {
+      color: #8080DD;
+    }
+  </style>
 </head>
-
 <body>
+  <div class="wrapper">
     <h1>Resume Blocking</h1>
-
+    
     <div class="container">
-        <p>You're about to resume the Social Media Blocker.</p>
-        <p>Once resumed, all your configured websites will be blocked again according to your settings.</p>
-
+      <p>You're about to resume the Social Media Blocker.</p>
+      <p>Once resumed, all your configured websites will be blocked again according to your settings.</p>
+      
+      <div class="buttons-container">
         <button class="resume-btn" id="resumeBtn">Confirm and Resume</button>
-        <div>
-            <button class="cancel-btn" id="cancelBtn">Cancel</button>
-        </div>
+        <button class="cancel-btn" id="cancelBtn">Cancel</button>
+      </div>
     </div>
-
-    <script src="resume-verification.js"></script>
+  </div>
+  
+  <script>
+    // Force dark mode
+    document.documentElement.style.backgroundColor = "#2A2A28";
+    document.body.style.backgroundColor = "#2A2A28";
+  </script>
+  <script src="resume-verification.js"></script>
 </body>
-
 </html>
