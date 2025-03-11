@@ -2,9 +2,8 @@
   "manifest_version": 3,
   "name": "Social Media Blocker",
   "version": "1.9",
-  "theme_color": "#2A2A28",
   "description": "Block social media websites with configurable settings",
-  "permissions": ["storage", "tabs", "webNavigation"],
+  "permissions": ["storage", "webNavigation"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
